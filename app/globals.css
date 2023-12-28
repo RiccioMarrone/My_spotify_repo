@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  /* background-color: #1E1E1E; */
+  background-color: whitesmoke;
+  font-size: 21px;
+  
+  
+}
+nav{
+  background-color: white;
+}
+.notActive{
+  color: rgba(0, 0, 0, 0.569);
+}
+/* Color btnuser */
+.btnUser{
+  color: rgb(253, 214, 214);
+}
+/* TopHeader */
+.topHeader{
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.652), rgba(0, 0, 0, 0)),url("https://cdns-images.dzcdn.net/images/artist/def3283f36f1b0b1cb0463fcfe1ef5f7/500x500.jpg");
+  object-fit: cover;
+  background-size: cover;
+}
+.btnStart{
+  color: #e7d5d5;
+  border: 3px solid rgb(240, 240, 240);
+  ;
+}
+
+/* Mix */
+.wave-header{
+  background-image: url("../public//media/wave.png");
+  background-size: 100% 100%;
+
+ 
+}
+
+/* Animazioni */
+
+.icon-animation{
+  animation: up_down infinite 1.5s linear;
+}
+
+@keyframes up_down{
+  0%{
+    top: 60%;
+  }
+  50%{
+    top: 70%;
+  }
+  100%{
+    top: 60%
+  }
+}
